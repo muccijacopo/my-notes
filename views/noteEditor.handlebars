@@ -1,0 +1,12 @@
+<h1 class="my-5">Modifica nota</h1>
+<form action="/note/edit/{{note.id}}" method="POST">
+  <div class="form-group">
+    <label for="titolo">Titolo</label>
+    <input type="text" name="title" class="form-control" value="{{note.title}}">
+  </div>
+  <div class="form-group">
+    <label for="contenuto">Contenuto</label>
+    <textarea class="form-control" rows="3" name="text">{{note.text}}</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Modifica</button>
+</form>

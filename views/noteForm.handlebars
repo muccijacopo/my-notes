@@ -1,0 +1,12 @@
+<h1 class="my-5">Nuova nota</h1>
+<form action="/note/add" method="POST">
+  <div class="form-group">
+    <label for="titolo">Titolo</label>
+    <input type="text" name="title" class="form-control" placeholder="Chiamare mamma">
+  </div>
+  <div class="form-group">
+    <label for="contenuto">Contenuto</label>
+    <textarea class="form-control" rows="3" name="text"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Crea nota</button>
+</form>
